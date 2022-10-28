@@ -1,0 +1,46 @@
+package kodlama.io.devs.business.concretes;
+
+import java.util.List;
+
+import kodlama.io.devs.business.abstracts.LanguageService;
+import kodlama.io.devs.dataAccess.abstracts.LanguageRepository;
+import kodlama.io.devs.entities.concretes.Language;
+
+public class LanguageMenager implements LanguageService{
+	private LanguageRepository languageRepository;
+	
+	public LanguageMenager(LanguageRepository languageRepository) {
+		this.languageRepository = languageRepository;
+	}
+
+	@Override
+	public List<Language> getAll() {
+		return languageRepository.getAll();
+	}
+
+	@Override
+	public void add(Language language) {
+		if(language.getName().isEmpty() || language.getName().isBlank()) {
+			throw new RuntimeException("Programlama dili bos gecilemez!");
+		}
+		else {
+			languageRepository.add(language);
+		}	
+	}
+
+	@Override
+	public void delete(int id) {
+		languageRepository.delete(id);
+	}
+
+	@Override
+	public void update(Language language, int id) {
+		languageRepository.update(language, id);
+	}
+
+	@Override
+	public Language getLanguageById(int id) {
+		return languageRepository.getLanguageById(id);
+	}
+
+}
