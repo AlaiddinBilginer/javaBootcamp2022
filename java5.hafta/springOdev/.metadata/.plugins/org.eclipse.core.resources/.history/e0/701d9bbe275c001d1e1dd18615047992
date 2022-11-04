@@ -1,0 +1,5 @@
+package kodlama.io.devs.business.request;
+
+public class CreateProgrammingLanguageRequest {
+
+}

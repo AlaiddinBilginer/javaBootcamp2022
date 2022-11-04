@@ -1,0 +1,42 @@
+package kodlama.io.devs.business.concretes;
+
+import java.util.List;
+
+import kodlama.io.devs.business.abstracts.ProgrammingLanguageTechnologyService;
+import kodlama.io.devs.business.request.CreateProgrammingLanguageTechnologyRequest;
+import kodlama.io.devs.business.request.RemoveProgrammingLanguageTechnologyRequest;
+import kodlama.io.devs.business.request.UpdateProgrammingLanguageTechnologyRequest;
+import kodlama.io.devs.business.responses.GetAllProgrammingLanguageTechnologiesRepsonse;
+import kodlama.io.devs.business.responses.GetByIdProgrammingLanguageTechnologiesResponse;
+
+public class ProgrammingLanguageTechnologyMenager implements ProgrammingLanguageTechnologyService{
+
+	@Override
+	public List<GetAllProgrammingLanguageTechnologiesRepsonse> getAll() {
+		
+	}
+
+	@Override
+	public GetByIdProgrammingLanguageTechnologiesResponse getById(int id) {
+		
+	}
+
+	@Override
+	public void add(CreateProgrammingLanguageTechnologyRequest createProgrammingLanguageTechnologyRequest) {
+		
+		
+	}
+
+	@Override
+	public void update(UpdateProgrammingLanguageTechnologyRequest updateProgrammingLanguageTechnologyRequest) {
+		
+		
+	}
+
+	@Override
+	public void remove(RemoveProgrammingLanguageTechnologyRequest removeProgrammingLanguageTechnologyRequest) {
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package kodlama.io.devs.business.abstracts;
+
+import java.util.List;
+
+import kodlama.io.devs.business.request.CreateProgrammingLanguageRequest;
+import kodlama.io.devs.business.responses.GetAllProgrammingLanguagesResponse;
+
+public interface ProgrammingLanguageService {
+	List<GetAllProgrammingLanguagesResponse> getAll();
+	
+	void add(CreateProgrammingLanguageRequest createProgrammingLanguageRequest);
+}
